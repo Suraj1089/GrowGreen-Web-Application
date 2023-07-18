@@ -74,15 +74,23 @@ WSGI_APPLICATION = 'growgreen.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME':'growgreen',
+#         'USER':'kalpesh',
+#         'PASSWORD':'1234',
+#         # 'OPTIONS': {'sslmode': 'require'},
+#     }
+# }
+
+import dj_database_url
+import os 
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'growgreen',
-        'USER':'kalpesh',
-        'PASSWORD':'1234',
-        # 'OPTIONS': {'sslmode': 'require'},
-    }
+    'default': dj_database_url.config(default=os.environ.get('POSTGRES_URL'))
 }
+
 
 
 
