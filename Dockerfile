@@ -2,7 +2,7 @@
 FROM python:3.9
 
 # Set environment variables for PostgreSQL
-ENV POSTGRES_URL=postgres://suraj:b88jwwC8aulZmvgoRHdf9RWB8YvJkpcf@dpg-chlgi9m4dadfmsmdcbo0-a.oregon-postgres.render.com/suraj_n
+ENV POSTGRES_URL=postgres://suraj:b88jwwC8aulZmvgoRHdf9RWB8YvJkpcf@dpg-chlgi9m4dadfmsmdcbo0-a.oregon-postgres.render.com/suraj_n9u9
 
 # Set environment variables for Python
 ENV PYTHONDONTWRITEBYTECODE 1
